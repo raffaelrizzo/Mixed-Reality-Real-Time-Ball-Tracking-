@@ -25,6 +25,8 @@ public class UDPServer : MonoBehaviour
         {
             this.transform.localPosition = newPosition;
         }
+        // this.transform.rotation = new Quaternion.EulerAngles(new Vector3(0, 0, 0));
+        this.transform.eulerAngles = new Vector3(0, 0, 0);
     }
 
     void OnReceived(System.IAsyncResult result)

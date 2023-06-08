@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WallSetupManager2 : MonoBehaviour
+public class WallSetupManager : MonoBehaviour
 {
+    public GameObject origin;
     public GameObject visual;
     public Transform pivot;
     public Transform creationHand;
@@ -13,6 +14,8 @@ public class WallSetupManager2 : MonoBehaviour
 
     public float defaultWidth = 0.3f;
     public float defaultHeight = 0.01f;
+
+    bool isOriginSet = false;
 
     // Start is called before the first frame update
     void Start()
@@ -29,20 +32,30 @@ public class WallSetupManager2 : MonoBehaviour
     {
         if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
         {
-            visual.SetActive(true);
-            startPosition = creationHand.position;
-            isUpdatingShape = true;
+            if (isOriginSet) 
+            {
+                visual.SetActive(true);
+                startPosition = creationHand.position;
+                isUpdatingShape = true;
+            }
         }
         else if (OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger))
         {
-            isUpdatingShape = false;
-            foreach (var item in objectToSpawnAfter)
+            if (isOriginSet)
             {
-                item.SetActive(true);
-            }
+                isUpdatingShape = false;
+                foreach (var item in objectToSpawnAfter)
+                {
+                    item.SetActive(true);
+                }
 
-            // Disable the WallSetupManager script after creating the wall
-            this.enabled = false;
+                // Disable the WallSetupManager script after creating the wall
+                this.enabled = false;
+            }
+            else
+            {
+                isOriginSet = true;
+            }
         }
 
         if (isUpdatingShape)
@@ -60,6 +73,7 @@ public class WallSetupManager2 : MonoBehaviour
 
         //Rotation
         pivot.right = Vector3.ProjectOnPlane(creationHand.position - startPosition, Vector3.up);
+        // this.transform.right = Vector3.ProjectOnPlane(creationHand.position - startPosition, Vector3.up);
 
         //Position
         pivot.position = startPosition + pivot.rotation * new Vector3(visual.transform.localScale.x / 2, -visual.transform.localScale.y / 2, 0);
