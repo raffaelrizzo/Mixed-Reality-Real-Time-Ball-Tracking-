@@ -2,32 +2,29 @@
 
 This repository hosts an interesting project divided into two parts - one part is dedicated to ball detection using Python and OpenCV, and the second part is about a Unity project called MR Footbonaut. These two parts communicate with each other using UDP protocol, forming a complex and exciting VR-enabled application.
 
-1. **Requirements**
+- [1. Requirements](#requirements)
    - Software Dependencies
    - Hardware Requirements
 
-2. **Installation Process**
+- [2. Installation Process](#installation)
    - Python Installation
    - Library Installations
    - Unity Installation
    - Repository Cloning
 
-3. **How to Run the Project**
+- [3. How to Run the Project](#how-to-run)
    - Updating the IP Address
    - Running the Ball Detection Script
    - Opening the Unity Scene
    - Running the Unity Scene
 
-4. **Summary**
+- [4. Summary](#summary)
    - Project Significance
    - Future Directions
 
-5. **Acknowledgements**
+- [5. Acknowledgements](#acknowledgements)
    - Gratitude Notes
-
-6. **Contribution**
-   - How to Contribute
-   - Troubleshooting & Feedback
+   - Contribute
 
 ## Requirements
 
