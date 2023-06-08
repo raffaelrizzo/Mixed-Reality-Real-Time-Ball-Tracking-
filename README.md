@@ -2,6 +2,37 @@
 
 This repository hosts an interesting project divided into two parts - one part is dedicated to ball detection using Python and OpenCV, and the second part is about a Unity project called MR Footbonaut. These two parts communicate with each other using UDP protocol, forming a complex and exciting VR-enabled application.
 
+1. **Introduction**
+   - Project Overview
+   - Repository Structure
+
+2. **Requirements**
+   - Software Dependencies
+   - Hardware Requirements
+
+3. **Installation Process**
+   - Python Installation
+   - Library Installations
+   - Unity Installation
+   - Repository Cloning
+
+4. **How to Run the Project**
+   - Updating the IP Address
+   - Running the Ball Detection Script
+   - Opening the Unity Scene
+   - Running the Unity Scene
+
+5. **Summary**
+   - Project Significance
+   - Future Directions
+
+6. **Acknowledgements**
+   - Gratitude Notes
+
+7. **Contribution**
+   - How to Contribute
+   - Troubleshooting & Feedback
+
 ## Requirements
 
 Before getting started, ensure you have the following software and hardware requirements:
@@ -44,7 +75,7 @@ Here are the steps to install the necessary libraries and dependencies:
    Navigate to your desired directory via terminal and clone this repository with the command:
 
    ```shell
-   git clone <repository_url>
+   git clone <https://github.com/raffaelrizzo/Mixed-Reality-Real-Time-Ball-Tracking-.git>
    ```
 
 ## How to Run
