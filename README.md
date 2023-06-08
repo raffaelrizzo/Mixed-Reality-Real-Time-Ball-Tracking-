@@ -23,7 +23,7 @@ This repository hosts an interesting project divided into two parts - one part i
    - Future Directions
 
 - [5. Acknowledgements](#acknowledgements)
-   - Gratitude Notes
+   - Gratitude Note
    - Contribute
 
 ## Requirements
