@@ -1,10 +1,11 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class TargetArea : MonoBehaviour
+public class Target : MonoBehaviour
 {
     public GameObject[] cubes;
-    public float lightUpTime = 5.0f;
+    public float lightUpTime = 3.0f;
     
     void Start()
     {
@@ -43,3 +44,4 @@ public class TargetArea : MonoBehaviour
 }
 
 }
+
