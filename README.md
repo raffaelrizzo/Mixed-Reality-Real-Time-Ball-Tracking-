@@ -40,6 +40,10 @@ Before getting started, ensure you have the following software and hardware requ
 7. **Unity**: Needed to run the MR Footbonaut project.
 8. **UDP_Receiver Unity Script**: Handles the transfer of position data via UDP.
 
+```
+pip install -r requirements.txt
+```
+
 ### Hardware
 1. **VR Headset**: With passthrough enabled.
 
