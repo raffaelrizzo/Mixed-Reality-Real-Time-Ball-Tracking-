@@ -107,7 +107,7 @@ Congratulations! You are now operating a complex VR application, capable of dete
 
 ### Single Camera Detection (Beta)
 
-The camera must be installed on the headset physically.
+The camera must be installed on the headset physically. **The ball can be only detected while the player looking towords it.**
 
 Here's the step-by-step process to get the project up and running:
 
@@ -156,8 +156,6 @@ cd Balldetection\ Python/SingleCamera/
 5. **Run the Unity Scene**
    
    With the Unity scene open, and your VR headset with passthrough enabled, press the Play button in Unity to run the scene.
-
-   The ball can be only detected while the player looking towords it.
 
 ## Summary
 This repository represents a proof of concept that demonstrates the power and possibility of combining real-time image processing with mixed reality. However, as it stands, the implementation requires two powerful computers and two cameras to function effectively. An intriguing direction for future exploration would be how to streamline and optimize image processing techniques to be more suitable and efficient for mixed reality applications.
