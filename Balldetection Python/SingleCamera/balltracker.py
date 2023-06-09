@@ -11,7 +11,7 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--cameraid', type=int, default=0, help='index of the camera')
     parser.add_argument('--depthai', action='store_true', help='use DepthAI plugin')
-    parser.add_argument('--modelpath', type=str, default='Data/out3/saved_model', help='path of the object detection model')
+    parser.add_argument('--modelpath', type=str, default='../Data/out3/saved_model', help='path of the object detection model')
     parser.add_argument('--confidence', type=float, default=0.5, help='detection confidence')
     parser.add_argument('--preview', action='store_true', help='preview video')
     parser.add_argument('--calibdata', type=str, default='./calibdata/00/parameters.json', help='path of the calibration data')
