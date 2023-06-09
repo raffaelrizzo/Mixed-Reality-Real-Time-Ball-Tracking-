@@ -40,10 +40,6 @@ Before getting started, ensure you have the following software and hardware requ
 7. **Unity**: Needed to run the MR Footbonaut project.
 8. **UDP_Receiver Unity Script**: Handles the transfer of position data via UDP.
 
-```
-pip install -r requirements.txt
-```
-
 ### Hardware
 1. **VR Headset**: With passthrough enabled.
 
@@ -61,6 +57,12 @@ Here are the steps to install the necessary libraries and dependencies:
 
    ```shell
    pip install opencv-python tensorflow argparse socket numpy
+   ```
+
+   For single camera direction, you also need to install following libraries:
+
+   ```shell
+   pip install depthai matplotlib
    ```
 
 3. **Unity**
