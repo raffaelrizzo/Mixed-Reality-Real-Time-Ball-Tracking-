@@ -79,6 +79,8 @@ Here are the steps to install the necessary libraries and dependencies:
 
 ## How to Run
 
+### Two Camera Detection (recommended)
+
 Here's the step-by-step process to get the project up and running:
 
 1. **Update the IP Address**
@@ -102,6 +104,60 @@ Here's the step-by-step process to get the project up and running:
    With the Unity scene open, and your VR headset with passthrough enabled, press the Play button in Unity to run the scene.
 
 Congratulations! You are now operating a complex VR application, capable of detecting ball positions in real-time and immersing you in the virtual MR Footbonaut experience.
+
+### Single Camera Detection (Beta)
+
+The camera must be installed on the headset physically.
+
+Here's the step-by-step process to get the project up and running:
+
+```shell
+cd Balldetection\ Python/SingleCamera/
+```
+
+1. **Update the IP Address**
+   
+   Both the Python script and the UDP_Receiver script that is attached to the Sphere in the Unity scene require the IP address.
+
+2. **Calibrate the camera**
+
+   This position estimation system is based on the following calibrations. At first, check that the external camera is connected properly by running the following:
+
+   ```shell
+   python preview.py
+   ```
+
+   You have to mesure the width and height of the video 1m away from camera.
+
+   Then you start calibration. The calibration system will automatically capture a sample frame every 5 seconds. At each time, capture the ball at a distance of [0.4, 0.6, 0.8, 1.0, 1.2, 1.5, 2.0, 2.5, 3.0] m from the camera.
+   
+   Note that you need to add arguments **unitwidth** and **unitheight** [m] which you mesured at the last step.
+
+   ```python
+   python calibrate.py --capture --unitwidth XX --unitheight YY
+   ```
+
+   The calibration data will be saved in calibata/00/ by default.
+
+3. **Run the Ball Detection Script**
+
+   Note that you need to add arguments **calibdata** which you saved at the last step and **serverip**.
+
+   ```shell
+   python balltraker.py --preview --calibdata xx/xx/parameters.json --serverip xxx.xxx.xxx.xxx
+   ```
+
+4. **Open the Unity Scene**
+   
+   Now, navigate to the "MR Footbonaut" folder and open the "Dynamic_Footonaut.unity" scene.
+
+   Note that the sphere must be a child of **CenterEyeAnchor** object in Unity scene hieralchy.
+
+5. **Run the Unity Scene**
+   
+   With the Unity scene open, and your VR headset with passthrough enabled, press the Play button in Unity to run the scene.
+
+   The ball can be only detected while the player looking towords it.
 
 ## Summary
 This repository represents a proof of concept that demonstrates the power and possibility of combining real-time image processing with mixed reality. However, as it stands, the implementation requires two powerful computers and two cameras to function effectively. An intriguing direction for future exploration would be how to streamline and optimize image processing techniques to be more suitable and efficient for mixed reality applications.
