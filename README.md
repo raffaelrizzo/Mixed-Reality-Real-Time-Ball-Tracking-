@@ -1,42 +1,45 @@
-# Real-time Mixed Reality sports application for ball sports
-In this repository, we present a real-time Mixed Reality application for Sports, including two approaches for tracking the position of a ball in 3D space. This project utilizes a Tensorflow Model, Python and OpenCV for the ball tracking and determining the ball's position in 3D space, Unity to create the Mixed Reality sports application and the UDP protocol to enable the two previous parts to communicate with each other, forming a complex and exciting VR-enabled application.
+# Footbonaut2Go a Real-time Mixed Reality application for ball sports
+
+In this repository, we present a real-time Mixed Reality application for Sports, including two approaches for tracking the position of a ball in 3D space. This project utilizes a Tensorflow Model, Python and OpenCV for the ball tracking and determining the ball's position in 3D space, Unity to create the Mixed Reality sports application and the UDP protocol to enable the two previous parts to communicate with each other, forming a complex and exciting MR-enabled application.
 
 
-## Introduction
+- [1. Theoretical Background](#theoretical background)
+
+- [2. Requirements](#requirements)
+   - Software Dependencies
+   - Hardware Requirements
+
+- [3. Installation Process](#installation)
+   - Python Installation
+   - Library Installations
+   - Unity Installation
+   - Repository Cloning
+
+- [4. How to Run the Project](#how-to-run)
+   - Updating the IP Address
+   - Running the Ball Detection Script
+   - Opening the Unity Scene
+   - Running the Unity Scene
+
+- [5. Summary](#summary)
+   - Project Significance
+   - Future Directions
+
+- [6. Acknowledgements](#acknowledgements)
+   - Gratitude Note
+   - Contribute
+
+## Theoretical Background
 Professional football clubs like Borussia Dortmund, Benfica Lissabon or Paris St. Germain all use high-tech training devices such as the Footbonaut to improve the ball pass accuracy and reaction times of their players. The Footbonaut is a field which typically consists of 14 by 14 metres. The player gets the ball from one of the eight throwing machines. Two of them are placed in the middle of each side and the ball comes flying from where it beeped before. Then it has to be played on in a controlled manner. 72 squares surround the court in a latticework, each 1.40 metres square and enclosed by light strips. The player has to hit the ball into the field that lights up. Once the ball has passed through the light barrier, it beeps again and the next ball is launched from one of the throwing machines. Tempos (up to 120 km/h) are just as individually adjustable as, for example, the spin applied to the ball.
 
 Studies like "Relationship between ball possession and match outcome in UEFA Champions League" by Farias et al. have shown that there is a significant relationship between ball possession and match outcomes. Dellal et al. showed in their study "Small-sided games in soccer: amateur vs. professional players' physiological responses, physical, and technical activities" that amateur football players completed fewer successful passes and lost more possessions compared to international, elite football players.
 These findings suggest that professional football players perform more exercises, that train a fast action time, high accuracy of passing, and distinctive technique (such as training with the Footbonaut) than amateur football players. 
 This also suggests that amateur football players could improve these technical skills through dedicated training to tackle these difficienices, such as by using the Footbonaut. However, training facilities like the Footbonaut can cost hundreds of thousands of Euros, making them an unfeasable option for amateur soccer clubs.
 By democratizing the Footbonaut, the performance gap between amateur and professional football players can be reduced.
-This is why we propose a novel approach to democrotize the Footbonaut. In this repository, we showcase two different, fully-functioning ball tracking techniques that enable football players improve their passing skills. We created a Mixed Reality application in Unity, that enables football players equipped with a physical football and standing in front of a wall to have a very similar exerience to the real Footbonaut. Through their Mixed Reality headset (we tried the application on both the Meta Quest Pro as well as the Meta Quest 2 - both in standalone mode), the players can see multiple rectangles projected virtually onto the wall in front of them. One of the rectangles lights up randomly and the player has to quickly hit the ball against the t this exact spot. If the player doesn't hit the wall at the correct spot, an error sound is played, while an encouring sound appears and the score is increased once the player hits the ball inside the litted rectangle.
+This is why we propose a novel approach to democrotize the Footbonaut. In this repository, we showcase two different, fully-functioning ball tracking techniques that enable football players improve their passing skills. We created a Mixed Reality application in Unity, that enables football players equipped with a physical football and standing in front of a wall to have a very similar exerience to the real Footbonaut. Through their Mixed Reality headset (we tried the application on both the Meta Quest Pro as well as the Meta Quest 2, the players can see multiple rectangles projected virtually onto the wall in front of them. One of the rectangles lights up randomly and the player has to quickly hit the ball against the t this exact spot. If the player doesn't hit the wall at the correct spot, an error sound is played, while an encouring sound appears and the score is increased once the player hits the ball inside the litted rectangle.
 To track the location of the ball, we came up with two different ball tracking approaches, which both provide a great accuracy for determining the football's current position in 3D space and whether the football was hit onto the correct location of the wall or not.
 This repository hosts an interesting project divided into two parts - one part is dedicated to ball detection using Python and OpenCV, and the second part is about a Unity project called MR Footbonaut. These two parts communicate with each other using UDP protocol, forming a complex and exciting VR-enabled application.
 
-
-- [1. Requirements](#requirements)
-   - Software Dependencies
-   - Hardware Requirements
-
-- [2. Installation Process](#installation)
-   - Python Installation
-   - Library Installations
-   - Unity Installation
-   - Repository Cloning
-
-- [3. How to Run the Project](#how-to-run)
-   - Updating the IP Address
-   - Running the Ball Detection Script
-   - Opening the Unity Scene
-   - Running the Unity Scene
-
-- [4. Summary](#summary)
-   - Project Significance
-   - Future Directions
-
-- [5. Acknowledgements](#acknowledgements)
-   - Gratitude Note
-   - Contribute
 
 ## Requirements
 
