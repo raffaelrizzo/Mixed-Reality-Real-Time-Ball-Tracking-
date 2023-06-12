@@ -49,10 +49,10 @@ Unfortunately, Meta does not allow developers to access the passthrough mode of 
 ## Ball Tracking Approaches
 To track the location of the ball, we came up with two different ball tracking approaches, which both provide a great accuracy for determining the football's current position in 3D space and whether the football was hit onto the correct location of the wall or not.
 
-- The first approach uses 2 stationary cameras that are placed in front and to the side of the wall and using a tensor flow model. Here is a picture that visualizes the setup we used for this approach: [Link to Picture](./Demonstration/Approach1.png)
+- The first approach uses 2 stationary cameras that are placed in front and to the side of the wall and using a tensor flow model. Here is a picture that visualizes the setup we used for this approach: [Link to Picture](Demonstration/Approach1.PNG)
 
 
-- The second approach requires only one camera that can be held in the hands or attached to the head of the player and that uses a different deep learning model. This approach is much more dynamic, but both are very accurate and can be installed using just simple smartphone cameras. [Link to Picture](./Demonstration/Approach2.png)
+- The second approach requires only one camera that can be held in the hands or attached to the head of the player and that uses a different deep learning model. This approach is much more dynamic, but both are very accurate and can be installed using just simple smartphone cameras. [Link to Picture](Demonstration/Approach2.PNG)
 
 
 
