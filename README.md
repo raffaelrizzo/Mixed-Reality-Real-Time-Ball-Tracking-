@@ -3,35 +3,21 @@
 In this repository, we present a real-time Mixed Reality application for Sports, including two approaches for tracking the position of a ball in 3D space. This project utilizes a Tensorflow Model, Python and OpenCV for the ball tracking and determining the ball's position in 3D space, Unity to create the Mixed Reality sports application and the UDP protocol to enable the two previous parts to communicate with each other, forming a complex and exciting MR-enabled application.
 
 
-- [1. Theoretical Background](#theoretical)
-   - Modern Sport Faciilities
-   - Research   
-   
-- [2. Ball Tracking Approaches](#approaches)
+# Table of Contents
+1. [Theoretical Background](#theoretical-background)
+   1. [Modern Sport Facilities](#modern-sport-facilities)
+   2. [Research](#research)
+2. [Ball Tracking Approaches](#ball-tracking-approaches)
+3. [Requirements](#requirements)
+   1. [Software](#software)
+   2. [Hardware](#hardware)
+4. [Installation](#installation)
+5. [How to Run](#how-to-run)
+   1. [First Approach: Two Camera Detection (stationary)](#first-approach-two-camera-detection-stationary)
+   2. [Second Approach: Single Camera Detection (dynamic)](#second-approach-single-camera-detection-dynamic)
+6. [Summary](#summary)
+7. [Acknowledgements](#acknowledgements)
 
-- [3. Requirements](#requirements)
-   - Software Dependencies
-   - Hardware Requirements
-
-- [4. Installation Process](#installation)
-   - Python Installation
-   - Library Installations
-   - Unity Installation
-   - Repository Cloning
-
-- [5. How to Run the Project](#how-to-run)
-   - Updating the IP Address
-   - Running the Ball Detection Script
-   - Opening the Unity Scene
-   - Running the Unity Scene
-
-- [6. Summary](#summary)
-   - Project Significance
-   - Future Directions
-
-- [7. Acknowledgements](#acknowledgements)
-   - Gratitude Note
-   - Contribute
 
 ## Theoretical Background
 ### Modern Sport Faciilities
@@ -49,10 +35,11 @@ Unfortunately, Meta does not allow developers to access the passthrough mode of 
 ## Ball Tracking Approaches
 To track the location of the ball, we came up with two different ball tracking approaches, which both provide a great accuracy for determining the football's current position in 3D space and whether the football was hit onto the correct location of the wall or not.
 
-- The first approach uses 2 stationary cameras that are placed in front and to the side of the wall and using a tensor flow model. Here is a picture that visualizes the setup we used for this approach: [Link to Picture](Demonstration/Approach1.PNG)
+- The first approach uses 2 stationary cameras that are placed in front and to the side of the wall and using a tensor flow model. Here is a picture that visualizes the setup we used for this approach: ![Optional Alt Text](Demonstration/Approach1.PNG)
 
 
-- The second approach requires only one camera that can be held in the hands or attached to the head of the player and that uses a different deep learning model. This approach is much more dynamic, but both are very accurate and can be installed using just simple smartphone cameras. [Link to Picture](Demonstration/Approach2.PNG)
+
+- The second approach requires only one camera that can be held in the hands or attached to the head of the player and that uses a different deep learning model. This approach is much more dynamic, but both are very accurate and can be installed using just simple smartphone cameras. Here is a picture that visualizes the setup we used for this approach: ![Optional Alt Text](Demonstration/Approach2.PNG)
 
 
 
