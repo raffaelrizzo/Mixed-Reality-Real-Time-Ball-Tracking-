@@ -3,9 +3,8 @@ By [Raffael Rizzo](https://github.com/raffaelrizzo) [Anna Braun](https://github.
 
 In this repository, we present a real-time Mixed Reality application for Sports, including two approaches for tracking the position of a ball in 3D space. This project utilizes a Tensorflow Model, Python and OpenCV for the ball tracking and determining the ball's position in 3D space, Unity to create the Mixed Reality sports application and the UDP protocol to enable the two previous parts to communicate with each other, forming a complex and exciting MR-enabled application.
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID)
 
-[![Watch the video](https://img.youtube.com/vi/RQjTT2h5Tfc/maxresdefault.jpg)](https://youtu.be/RQjTT2h5Tfc)
+[![Watch the video]](https://youtu.be/RQjTT2h5Tfc)
 
 
 
